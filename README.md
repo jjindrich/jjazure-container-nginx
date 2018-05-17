@@ -15,5 +15,15 @@ docker images
 ## Run container
 
 ```bash
-docker run jjnginx:latest
+docker run -d -p 8080:80 jjnginx:latest
+
+docker ps
 ```
+
+Check in browser http://localhost:8080/
+
+## Connect into container
+
+```bash
+docker exec -it 7c "/bin/bash"
+``` 
